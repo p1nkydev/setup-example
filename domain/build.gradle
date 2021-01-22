@@ -1,0 +1,21 @@
+plugins {
+    id 'java-library'
+    id 'kotlin'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+dependencies {
+    // Coroutines
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.2"
+
+    //DI
+    implementation "org.koin:koin-core:2.1.6"
+
+    testImplementation 'junit:junit:4.13.1'
+    testImplementation "io.mockk:mockk:1.10.5"
+    testImplementation 'org.jetbrains.kotlinx:kotlinx-coroutines-test:1.4.0'
+}

@@ -1,0 +1,10 @@
+include ':data:local'
+include ':data:remote'
+include ':flow:transfer'
+include ':data'
+include ':flow:main'
+include ':flow'
+include ':presentation'
+include ':domain'
+include ':app'
+rootProject.name = "ProjectSetupExample"
